@@ -71,3 +71,30 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 /CrowHeist_Prototype/Build
+
+### FMOD Unity Integration ###
+# Never ignore DLLs in the FMOD subfolder.
+!CrowHeist_Prototype/[Aa]ssets/Plugins/FMOD/**/lib/*
+
+# Don't ignore images and gizmos used by FMOD in the Unity Editor.
+!CrowHeist_Prototype/[Aa]ssets/Gizmos/FMOD/*
+!CrowHeist_Prototype/[Aa]ssets/Editor Default Resources/FMOD/*
+
+# Ignore the Cache-file since it is updated locally either way
+CrowHeist_Prototype/[Aa]ssets/**/FMODStudioCache.asset
+CrowHeist_Prototype/[Aa]ssets/**/FMODStudioCache.asset.meta
+CrowHeist_Prototype/[Aa]ssets/Plugins/FMOD/Cache/*
+CrowHeist_Prototype/[Aa]ssets/Plugins/FMOD/Cache.meta
+CrowHeist_Prototype/[Aa]ssets/Plugins/FMOD/Cache/Editor.meta
+
+# Log-files
+fmod.log
+fmod_editor.log
+
+# FMOD 1.10.x (Legacy)
+CrowHeist_Prototype/Assets/FMODAssets/*
+CrowHeist_Prototype/Assets/FMODStudioCache.meta
+CrowHeist_Prototype/CrowHeistFMOD/.cache
+CrowHeist_Prototype/CrowHeistFMOD/.unsaved
+CrowHeist_Prototype/CrowHeistFMOD/.user
+
